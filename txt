@@ -1,0 +1,39 @@
+function on() {
+  document.body.classList.add('dark');
+  // Guardar el tema oscuro en el local storage
+  localStorage.setItem('theme', 'dark');
+}
+
+// Función para desactivar el tema oscuro
+function off() {
+  document.body.classList.remove('dark');
+  // Guardar el tema claro en el local storage
+  localStorage.setItem('theme', 'light');
+}
+
+// Función para cambiar el tema
+function cambio() {
+  let theme = localStorage.getItem('theme'); // Leer el tema almacenado en el local storage
+
+  if (theme === 'dark') {
+    off(); // Si el tema almacenado es oscuro, cambiar a claro
+  } else {
+    on(); // Si el tema almacenado es claro (o no está definido), cambiar a oscuro
+  }
+}
+
+// Agregar evento al botón para cambiar el tema
+let btn = document.getElementById('b');
+btn.addEventListener('click', () => {
+  cambio();
+});
+
+// Al cargar la página, verificar si hay un tema almacenado y aplicarlo si es necesario
+document.addEventListener('DOMContentLoaded', () => {
+  let theme = localStorage.getItem('theme');
+  if (theme === 'dark') {
+    on();
+  } else {
+    off();
+  }
+});
