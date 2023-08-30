@@ -2,7 +2,7 @@
 
 
 
-
+//swalert toast
 const Toast = Swal.mixin({
     toast: true,
     position: 'top-end',
@@ -25,7 +25,7 @@ Toast.fire({
     font: 'bold'
 })
 
-
+//aos inicio
 AOS.init();
 
 
@@ -56,15 +56,26 @@ btn.addEventListener('click', () => {
 
 
 
-function irArriba() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
+
+//boton hacia arriba
+
+let up = document.getElementById('btnIrArriba');
+
+up.addEventListener('click', () => {
+
+
+    function irArriba() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    irArriba();
+})
 
 // Mostrar el botón cuando el usuario desplaza hacia abajo
-window.addEventListener("scroll", function() {
+
+window.addEventListener("scroll", function () {
     const btnIrArriba = document.getElementById("btnIrArriba");
     if (window.pageYOffset > 100) {
         btnIrArriba.style.display = "block";
