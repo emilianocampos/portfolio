@@ -31,6 +31,9 @@ span {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4)
 }
 
+.imglg {
+    width: 80px !important;
+}
 
 .invert {
     border-radius: 220px;
@@ -178,7 +181,8 @@ a.dropdown-item:hover {
 }
 
 .simple {
-    background-color: rgba(255, 255, 255, 0.781) !important;
+    background: linear-gradient(198deg, rgba(33, 150, 243, 1) 0%, rgba(0, 152, 70, 1) 100%) !important;
+
     margin-bottom: 400px;
     margin-top: 100px;
     width: 900px !important;
@@ -188,6 +192,10 @@ a.dropdown-item:hover {
 
     position: relative;
     z-index: 2;
+}
+
+.crazy {
+    width: 40px !important;
 }
 
 .card-title {
@@ -211,8 +219,8 @@ a.dropdown-item:hover {
     height: 50px;
     border: none;
     outline: none;
-    color: #fff;
-    background: #111;
+    color: #ffffff;
+    background: #0e0d0d;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -239,7 +247,7 @@ a.dropdown-item:hover {
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #f8f8f8
 }
 
 .glow-on-hover:active:after {
@@ -283,7 +291,7 @@ a.dropdown-item:hover {
 
 
 /*2ndo bnt */
-a.ira{
+a.ira {
     background: linear-gradient(198deg, rgba(33, 150, 243, 1) 0%, rgba(0, 152, 70, 1) 100%);
     background-color: #000000;
     color: #fff;
@@ -298,14 +306,18 @@ a.ira{
     display: inline-block;
     box-shadow: -4px 2px 8px -1px #2D2D2D;
     text-shadow: 2px 2px 0px #000000;
-   }
-   a.ira:hover{
-    background: linear-gradient(198deg, rgba(33, 149, 243, 0.582) 0%, rgba(0, 152, 71, 0.575) 100%);;
+}
+
+a.ira:hover {
+    background: linear-gradient(198deg, rgba(33, 149, 243, 0.582) 0%, rgba(0, 152, 71, 0.575) 100%);
+    ;
     background-color: #515151;
-   }
-   a.ira:active{
+}
+
+a.ira:active {
     transform: scale(0.95);
-   }
+}
+
 /*codigo*/
 
 .fw-bolder {
@@ -316,7 +328,7 @@ a.ira{
 
 .bkgvid {
     position: absolute;
-    top: 310px;
+    top: 100px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -336,7 +348,7 @@ a.ira{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 80px;
+
 }
 
 .contpy {
@@ -398,16 +410,40 @@ a.ira{
     width: 240px;
     align-self: center;
 }
-#eb{
+
+#eb {
     align-self: center;
     width: 180px;
 }
+
+#btnIrArriba {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    background-color: #007bff00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    width: 20px;
+}
+
+.au {
+    width: 100px;
+}
+
+
+
+
 .tjta {
     width: 290px !important;
     height: 400px !important;
     border-radius: 10px !important;
-    -webkit-box-shadow: 12px 9px 15px -2px rgba(0,0,0,0.8) !important; 
-box-shadow: 12px 9px 15px -2px rgba(0,0,0,0.8) !important;
+    -webkit-box-shadow: 12px 9px 15px -2px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 12px 9px 15px -2px rgba(0, 0, 0, 0.8) !important;
+    border: 5px double #000000 !important;
 }
 
 .lgo {
@@ -418,6 +454,171 @@ box-shadow: 12px 9px 15px -2px rgba(0,0,0,0.8) !important;
 .c-t {
     margin-top: 60px;
 }
+
+.mee {
+    margin-top: 200px !important;
+}
+
+.swal2-image {
+    width: 200px;
+}
+
+.swal2-html-container {
+    font-size: 1.5rem !important;
+}
+
+
+.btnsb {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cssbuttons-io-button {
+    width: 200px;
+    background: rgb(1, 224, 105);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #000000;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    margin: 80px;
+    font-size: 1.7rem;
+    width: 500px;
+}
+
+.cssbuttons-io-button .icon {
+    background: rgb(255, 255, 255);
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+
+.s {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 900px;
+    background: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-bottom: 100px;
+}
+
+.form-container button:active {
+    scale: 0.95;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #0a0a0a;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #050505;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: rgba(0, 152, 70, 1);
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: rgba(0, 152, 70, 1);
+}
+
+
+
+
+
 
 /*mediaquery*/
 
@@ -452,7 +653,7 @@ box-shadow: 12px 9px 15px -2px rgba(0,0,0,0.8) !important;
 
     .bkgvid {
         position: absolute;
-        top: 202px;
+        top: 93px;
         height: 500px;
 
     }
@@ -465,6 +666,18 @@ box-shadow: 12px 9px 15px -2px rgba(0,0,0,0.8) !important;
         font-size: 1.3rem;
         color: rgb(0, 0, 0);
     }
+
+    .au {
+        width: 40px;
+    }
+
+    #btnIrArriba {
+
+        padding: 0px 0px;
+
+    }
+
+
 
     .p1 {
 
@@ -491,6 +704,10 @@ box-shadow: 12px 9px 15px -2px rgba(0,0,0,0.8) !important;
         font-weight: bolder !important;
         margin-bottom: 13px;
 
+    }
+
+    .imglg {
+        width: 50px !important;
     }
 
     h3 {
@@ -522,4 +739,27 @@ box-shadow: 12px 9px 15px -2px rgba(0,0,0,0.8) !important;
         border-radius: 19px;
         border: 2px solid #000000;
     }
+
+    .contcard {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+
+
+    .cssbuttons-io-button {
+        width: 200px;
+        font-size: 1rem;
+    }
+
+
+
+   
+    .form-container {
+ 
+        width: 200px;
+    }
+
+
 }
