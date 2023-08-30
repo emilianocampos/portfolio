@@ -1,7 +1,6 @@
 
 
 
-
 //swalert toast
 const Toast = Swal.mixin({
     toast: true,
@@ -31,7 +30,6 @@ AOS.init();
 
 //-descargar cv 
 let btn = document.getElementById('downloadButton');
-
 
 
 btn.addEventListener('click', () => {
