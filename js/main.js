@@ -109,30 +109,41 @@ window.addEventListener("scroll", function () {
 
 
 
-const botonMeGusta = document.getElementById('botonMeGusta');
-const contador = document.getElementById('contador');
+document.addEventListener("DOMContentLoaded", function () {
+    const commentList = document.getElementById("commentList");
+    const commentText = document.getElementById("commentText");
+    const submitComment = document.getElementById("submitComment");
 
-// Verifica si ya existe un valor en localStorage para los "Me gusta"
-if (localStorage.getItem('likes') === null) {
-  // Si no existe, inicializa el contador en 0
-  localStorage.setItem('likes', '0');
-}
+    // Obtener comentarios almacenados en localStorage al cargar la página
+    const comments = JSON.parse(localStorage.getItem("comments")) || [];
 
-// Carga el valor del contador desde localStorage y muestra en la página
-contador.textContent = localStorage.getItem('likes');
+    // Mostrar comentarios existentes
+    function showComments() {
+        commentList.innerHTML = "";
+        comments.forEach(function (comment) {
+            const li = document.createElement("li");
+            li.textContent = comment;
+            commentList.appendChild(li);
+        });
+    }
 
-// Agrega un controlador de eventos al botón
-botonMeGusta.addEventListener('click', function() {
-  // Incrementa el contador
-  let likes = parseInt(localStorage.getItem('likes'));
-  likes++;
-  
-  // Actualiza el contador en la página
-  contador.textContent = likes;
-  
-  // Guarda el nuevo valor en localStorage
-  localStorage.setItem('likes', likes.toString());
+    showComments();
+
+    // Agregar un nuevo comentario
+    submitComment.addEventListener("click", function () {
+        const newComment = commentText.value;
+        if (newComment.trim() !== "") {
+            comments.push(newComment);
+            localStorage.setItem("comments", JSON.stringify(comments));
+            commentText.value = "";
+            showComments();
+        }
+    });
 });
+
+
+
+
 
 
 
