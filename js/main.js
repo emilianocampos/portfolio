@@ -1,6 +1,30 @@
 
+// sonidos 
 
+let multi = document.getElementById('multi');
+let goBtn = document.getElementById('go');
 
+goBtn.addEventListener('click', () => {
+    multi.play();
+})
+
+let alert = document.getElementById('alert');
+let alertBtn = document.getElementById('downloadButton');
+
+alertBtn.addEventListener('click', () => {
+    alert.play();
+})
+
+let hover = document.querySelectorAll('.ira');
+let soundcel = document.getElementById('soundcel');
+console.log(hover);
+
+for (let hovers of hover) {
+    hovers.addEventListener('mouseenter', () => {
+        soundcel.play();
+
+    })
+}
 //swalert toast
 const Toast = Swal.mixin({
     toast: true,
@@ -84,30 +108,6 @@ window.addEventListener("scroll", function () {
 });
 
 
-let multi = document.getElementById('multi');
-let goBtn = document.getElementById('go');
-
-goBtn.addEventListener('click', () => {
-    multi.play();
-})
-
-let alert = document.getElementById('alert');
-let alertBtn = document.getElementById('downloadButton');
-
-alertBtn.addEventListener('click', () => {
-    alert.play();
-})
-
-let hover = document.querySelectorAll('.ira');
-let soundcel = document.getElementById('soundcel');
-console.log(hover);
-
-for (let hovers of hover) {
-    hovers.addEventListener('mouseenter', () => {
-        soundcel.play();
-
-    })
-}
 
 const botonMeGusta = document.getElementById('botonMeGusta');
 const contador = document.getElementById('contador');
