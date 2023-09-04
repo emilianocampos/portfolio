@@ -25,7 +25,29 @@ for (let hovers of hover) {
 
     })
 }
+
+let navLink = document.querySelectorAll('.nav-link');
+
+for (let navs of navLink) {
+    navs.addEventListener('mouseenter', () => {
+        soundcel.play();
+
+    })
+
+}
+
+
+
+let send = document.getElementById('send');
+let soundSend = document.getElementById('ssend');
+
+
+send.addEventListener('click', () => {
+    soundSend.play();
+
+})
 //swalert toast
+
 const Toast = Swal.mixin({
     toast: true,
     position: 'top-end',
@@ -49,10 +71,12 @@ Toast.fire({
 })
 
 //aos inicio
+
 AOS.init();
 
 
 //-descargar cv 
+
 let btn = document.getElementById('downloadButton');
 
 
@@ -95,7 +119,7 @@ up.addEventListener('click', () => {
     irArriba();
 })
 
-// Mostrar el botón cuando el usuario desplaza hacia abajo
+// mostrar el botón cuando el usuario desplaza hacia abajo
 
 window.addEventListener("scroll", function () {
     const btnIrArriba = document.getElementById("btnIrArriba");
@@ -109,37 +133,7 @@ window.addEventListener("scroll", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const commentList = document.getElementById("commentList");
-    const commentText = document.getElementById("commentText");
-    const submitComment = document.getElementById("submitComment");
 
-    // Obtener comentarios almacenados en localStorage al cargar la página
-    const comments = JSON.parse(localStorage.getItem("comments")) || [];
-
-    // Mostrar comentarios existentes
-    function showComments() {
-        commentList.innerHTML = "";
-        comments.forEach(function (comment) {
-            const li = document.createElement("li");
-            li.textContent = comment;
-            commentList.appendChild(li);
-        });
-    }
-
-    showComments();
-
-    // Agregar un nuevo comentario
-    submitComment.addEventListener("click", function () {
-        const newComment = commentText.value;
-        if (newComment.trim() !== "") {
-            comments.push(newComment);
-            localStorage.setItem("comments", JSON.stringify(comments));
-            commentText.value = "";
-            showComments();
-        }
-    });
-});
 
 
 

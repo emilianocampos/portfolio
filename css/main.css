@@ -59,12 +59,15 @@ a.dropdown-item:hover {
 }
 
 .nav-item a {
-    color: #000000;
+    color: rgb(0, 0, 0);
     font-size: 1.5rem !important;
     padding-left: 20px;
+    font-weight: bold;
+    background: #03727d
 }
 
 .nav-item a:hover {
+ 
     color: #ffffff
 }
 
@@ -327,12 +330,12 @@ a.ira:active {
 
 .bkgvid {
     position: absolute;
-    top: 100px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    height: 770px;
+    height:880px;
 }
 
 .imgsm {

@@ -16,8 +16,8 @@
 
 
   <header class="head">
-
     <img src="./img/experiencia-programacion-persona-que-trabaja-codigos-computadora.jpg" alt="" class="bkgvid">
+
 
 
     <nav role="navigation">
@@ -37,14 +37,14 @@
       <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
 
         <ul class="navbar-nav mx-auto ">
-         
-          <li class="nav-item">
+
+          <li class="nav-item dropdown">
             <a class="nav-link" href="#sm">Sobre Mi</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item dropdown">
             <a class="nav-link" href="#py">Proyectos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item dropdown">
             <a class="nav-link" href="#">Contacto</a>
           </li>
           <li class="nav-item dropdown">
@@ -57,8 +57,10 @@
 
 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="https://github.com/emilianocampos"><img src="./img/icons8-github-48.png" alt="">Github</a></li>
-              <li><a class="dropdown-item" href="https://www.linkedin.com/in/emiliano-campos-campazzo-b06b8126b/"><img src="./img/icons8-linkedin-48.png" alt="">Linkedin</a></li>
+              <li><a class="dropdown-item" href="https://github.com/emilianocampos"><img
+                    src="./img/icons8-github-48.png" alt="">Github</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/emiliano-campos-campazzo-b06b8126b/"><img
+                    src="./img/icons8-linkedin-48.png" alt="">Linkedin</a></li>
 
             </ul>
           </li>
@@ -288,8 +290,7 @@
 
       <div class="s">
         <div class="form-container">
-          <button id="botonMeGusta">Me gusta</button>
-<p id="contador">0</p>
+
           <form class="form" action="https://formsubmit.co/emicampos1268@gmail.com" method="POST">
             <div class="form-group">
               <label for="email">Coloca tu Nombre</label>
@@ -305,7 +306,7 @@
             </div>
 
             <div class="btnsb">
-              <button class="cssbuttons-io-button">Enviar mensaje
+              <button class="cssbuttons-io-button" id="send">Enviar mensaje
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                     <path fill="none" d="M0 0h24v24H0z"></path>
@@ -315,21 +316,18 @@
                 </div>
               </button>
             </div>
-            
+            <input type="hidden" name="_next" value="https://emilianocampos.github.io/portfolio/">
+            <input type="hidden" name="_captcha" value="false">
           </form>
+
+
         </div>
       </div>
-      <div class="comments">
-        <h2>Comentarios</h2>
-        <ul id="commentList">
-            <!-- Los comentarios se agregarán aquí dinámicamente -->
-        </ul>
-        <textarea id="commentText" placeholder="Escribe tu comentario"></textarea>
-        <button id="submitComment">Comentar</button>
+
     </div>
     </div>
   </main>
-  
+
   <footer class="footer">
     <div class="waves">
       <div class="wave" id="wave1"></div>
@@ -338,36 +336,41 @@
       <div class="wave" id="wave4"></div>
     </div>
     <ul class="social-icon">
-      
+
       <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/emilianocampos">
-        <ion-icon name="logo-github"></ion-icon>
-      </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/emiliano-campos-campazzo-b06b8126b/">
+          <ion-icon name="logo-github"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link"
+          href="https://www.linkedin.com/in/emiliano-campos-campazzo-b06b8126b/">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a></li>
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/emiii.cc/">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a></li>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
     </ul>
     <ul class="menu">
       <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Sobre mi</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Proyectos</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
-  
+
 
     </ul>
+
     <p>&copy;2023 Emiliano Campos | All Rights Reserved</p>
+
     <button id="btnIrArriba"><img src="./img/pngegg.png" alt="arrow-up" class="au"></button>
   </footer>
- 
-<audio src="./img/ES_Bell Elevator Ring - SFX Producer.mp3" id="bell"></audio>
-<audio src="./img/ES_Multimedia Notify 10 - SFX Producer.mp3" id="multi"></audio>
-<audio src="./img/ES_Beep Alert Chime 6 - SFX Producer.mp3" id="alert"></audio>
-<audio src="./img/ES_Cell Phone Button - SFX Producer.mp3" id="soundcel"></audio>
+
+  
+  <audio src="./img/ES_Multimedia 787 - SFX Producer.mp3" id="ssend"></audio>
+  <audio src="./img/ES_Bell Elevator Ring - SFX Producer.mp3" id="bell"></audio>
+  <audio src="./img/ES_Multimedia Notify 10 - SFX Producer.mp3" id="multi"></audio>
+  <audio src="./img/ES_Beep Alert Chime 6 - SFX Producer.mp3" id="alert"></audio>
+  <audio src="./img/ES_Cell Phone Button - SFX Producer.mp3" id="soundcel"></audio>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>  
+  <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./js/main.js"></script>
