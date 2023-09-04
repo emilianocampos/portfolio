@@ -63,7 +63,7 @@ a.dropdown-item:hover {
     font-size: 1.5rem !important;
     padding-left: 20px;
     font-weight: bold;
-    background: #03727d
+    background: #03737dab ;
 }
 
 .nav-item a:hover {
@@ -187,7 +187,7 @@ a.dropdown-item:hover {
     background: rgba(255, 255, 255, 0.897)!important;
 
     margin-bottom: 400px;
-    margin-top: 200px;
+    margin-top: 120px;
     width: 1000px !important;
     border-radius: 19px;
     border: 4px solid #000000;
@@ -433,7 +433,7 @@ a.ira:active {
 }
 
 .au {
-    width: 100px;
+    width: 70px;
 }
 
 
