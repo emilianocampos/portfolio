@@ -32,7 +32,7 @@ span {
 }
 
 .imglg {
-    width: 80px !important;
+    width: 70px !important;
 }
 
 .invert {
@@ -202,10 +202,15 @@ a.dropdown-item:hover {
 
 .card-title {
     font-size: 2rem;
+    margin: 36px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card-text {
+
     font-size: 2rem !important;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 .logos {
@@ -385,6 +390,7 @@ a.ira:active {
     border-radius: 19px;
     border: 4px solid #000000;
     margin-top: 150px;
+    
 }
 
 .d {
@@ -394,7 +400,7 @@ a.ira:active {
 }
 
 #calc {
-    width: 145px;
+    width: 135px;
     align-self: center;
 }
 
@@ -417,7 +423,11 @@ a.ira:active {
     align-self: center;
     width: 200px;
 }
-
+#clics{
+    align-self: center;
+    width: 200px;
+    height: 160px;
+}
 #btnIrArriba {
     position: fixed;
     bottom: 0;
@@ -435,6 +445,7 @@ a.ira:active {
 .au {
     width: 70px;
 }
+.card
 
 
 
@@ -880,4 +891,30 @@ a.ira:active {
     }
 
 
+}
+
+.tjta {
+    width: 290px !important;
+    height: 400px !important;
+    border-radius: 10px !important;
+    -webkit-box-shadow: 12px 9px 15px -2px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 12px 9px 15px -2px rgba(0, 0, 0, 0.8) !important;
+    border: 5px double #000000 !important;
+}
+
+.lgo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.c-t {
+    margin-top: 60px;
+}
+
+.mee {
+    margin-top: 200px !important;
+}
+#clica{
+    width: 170px;
+    align-self: center;
 }
